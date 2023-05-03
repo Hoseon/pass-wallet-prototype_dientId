@@ -6,9 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseCore
+import FirebaseStorage
+
 
 @main
 struct pass_wallet_prototypeApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

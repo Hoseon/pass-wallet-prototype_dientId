@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3454E829FA59F3007E66F7 /* AddPassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3454E729FA59F3007E66F7 /* AddPassView.swift */; };
 		DA6198BF29C2E1500033980B /* pass_wallet_prototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6198BE29C2E1500033980B /* pass_wallet_prototypeApp.swift */; };
 		DA6198C129C2E1500033980B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6198C029C2E1500033980B /* ContentView.swift */; };
 		DA6198C329C2E1510033980B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6198C229C2E1510033980B /* Assets.xcassets */; };
 		DA6198C629C2E1510033980B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6198C529C2E1510033980B /* Preview Assets.xcassets */; };
+		DAC1C2DD29F902ED00988955 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAC1C2DC29F902ED00988955 /* GoogleService-Info.plist */; };
+		DAC1C2E029F9124F00988955 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DAC1C2DF29F9124F00988955 /* FirebaseStorage */; };
+		DAC1C2E229F9124F00988955 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DAC1C2E129F9124F00988955 /* FirebaseStorageCombine-Community */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA3454E729FA59F3007E66F7 /* AddPassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPassView.swift; sourceTree = "<group>"; };
 		DA6198BB29C2E1500033980B /* pass-wallet-prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pass-wallet-prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6198BE29C2E1500033980B /* pass_wallet_prototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pass_wallet_prototypeApp.swift; sourceTree = "<group>"; };
 		DA6198C029C2E1500033980B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA6198C229C2E1510033980B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA6198C529C2E1510033980B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA6198CC29C2E3A40033980B /* pass-wallet-prototype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "pass-wallet-prototype.entitlements"; sourceTree = "<group>"; };
+		DAC1C2DC29F902ED00988955 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC1C2E229F9124F00988955 /* FirebaseStorageCombine-Community in Frameworks */,
+				DAC1C2E029F9124F00988955 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +60,11 @@
 		DA6198BD29C2E1500033980B /* pass-wallet-prototype */ = {
 			isa = PBXGroup;
 			children = (
+				DAC1C2DC29F902ED00988955 /* GoogleService-Info.plist */,
+				DA6198CC29C2E3A40033980B /* pass-wallet-prototype.entitlements */,
 				DA6198BE29C2E1500033980B /* pass_wallet_prototypeApp.swift */,
 				DA6198C029C2E1500033980B /* ContentView.swift */,
+				DA3454E729FA59F3007E66F7 /* AddPassView.swift */,
 				DA6198C229C2E1510033980B /* Assets.xcassets */,
 				DA6198C429C2E1510033980B /* Preview Content */,
 			);
@@ -83,6 +95,10 @@
 			dependencies = (
 			);
 			name = "pass-wallet-prototype";
+			packageProductDependencies = (
+				DAC1C2DF29F9124F00988955 /* FirebaseStorage */,
+				DAC1C2E129F9124F00988955 /* FirebaseStorageCombine-Community */,
+			);
 			productName = "pass-wallet-prototype";
 			productReference = DA6198BB29C2E1500033980B /* pass-wallet-prototype.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +127,9 @@
 				Base,
 			);
 			mainGroup = DA6198B229C2E1500033980B;
+			packageReferences = (
+				DAC1C2DE29F9124F00988955 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = DA6198BC29C2E1500033980B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +146,7 @@
 			files = (
 				DA6198C629C2E1510033980B /* Preview Assets.xcassets in Resources */,
 				DA6198C329C2E1510033980B /* Assets.xcassets in Resources */,
+				DAC1C2DD29F902ED00988955 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA6198C129C2E1500033980B /* ContentView.swift in Sources */,
+				DA3454E829FA59F3007E66F7 /* AddPassView.swift in Sources */,
 				DA6198BF29C2E1500033980B /* pass_wallet_prototypeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,27 +285,35 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "pass-wallet-prototype/pass-wallet-prototype.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pass-wallet-prototype/Preview Content\"";
 				DEVELOPMENT_TEAM = FVWPNKUT4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "pass-wallet-proto";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.chu.pass-wallet-prototype";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -293,27 +322,35 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "pass-wallet-prototype/pass-wallet-prototype.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"pass-wallet-prototype/Preview Content\"";
 				DEVELOPMENT_TEAM = FVWPNKUT4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "pass-wallet-proto";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.chu.pass-wallet-prototype";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +376,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DAC1C2DE29F9124F00988955 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAC1C2DF29F9124F00988955 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAC1C2DE29F9124F00988955 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		DAC1C2E129F9124F00988955 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAC1C2DE29F9124F00988955 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA6198B329C2E1500033980B /* Project object */;
 }
