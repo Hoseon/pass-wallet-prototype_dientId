@@ -12,10 +12,21 @@
 		DA6198C129C2E1500033980B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6198C029C2E1500033980B /* ContentView.swift */; };
 		DA6198C329C2E1510033980B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6198C229C2E1510033980B /* Assets.xcassets */; };
 		DA6198C629C2E1510033980B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6198C529C2E1510033980B /* Preview Assets.xcassets */; };
+		DABFF3DE2A01EE8E005B290F /* pass_wallet_prototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABFF3DD2A01EE8E005B290F /* pass_wallet_prototypeTests.swift */; };
 		DAC1C2DD29F902ED00988955 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAC1C2DC29F902ED00988955 /* GoogleService-Info.plist */; };
 		DAC1C2E029F9124F00988955 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DAC1C2DF29F9124F00988955 /* FirebaseStorage */; };
 		DAC1C2E229F9124F00988955 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DAC1C2E129F9124F00988955 /* FirebaseStorageCombine-Community */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DABFF3DF2A01EE8E005B290F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA6198B329C2E1500033980B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA6198BA29C2E1500033980B;
+			remoteInfo = "pass-wallet-prototype";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DA3454E729FA59F3007E66F7 /* AddPassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPassView.swift; sourceTree = "<group>"; };
@@ -25,6 +36,9 @@
 		DA6198C229C2E1510033980B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA6198C529C2E1510033980B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA6198CC29C2E3A40033980B /* pass-wallet-prototype.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "pass-wallet-prototype.entitlements"; sourceTree = "<group>"; };
+		DABFF3DB2A01EE8E005B290F /* pass-wallet-prototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pass-wallet-prototypeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABFF3DD2A01EE8E005B290F /* pass_wallet_prototypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pass_wallet_prototypeTests.swift; sourceTree = "<group>"; };
+		DABFF3E42A01FCE4005B290F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DAC1C2DC29F902ED00988955 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -38,6 +52,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DABFF3D82A01EE8E005B290F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -45,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6198BD29C2E1500033980B /* pass-wallet-prototype */,
+				DABFF3DC2A01EE8E005B290F /* pass-wallet-prototypeTests */,
 				DA6198BC29C2E1500033980B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				DA6198BB29C2E1500033980B /* pass-wallet-prototype.app */,
+				DABFF3DB2A01EE8E005B290F /* pass-wallet-prototypeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +83,7 @@
 		DA6198BD29C2E1500033980B /* pass-wallet-prototype */ = {
 			isa = PBXGroup;
 			children = (
+				DABFF3E42A01FCE4005B290F /* Info.plist */,
 				DAC1C2DC29F902ED00988955 /* GoogleService-Info.plist */,
 				DA6198CC29C2E3A40033980B /* pass-wallet-prototype.entitlements */,
 				DA6198BE29C2E1500033980B /* pass_wallet_prototypeApp.swift */,
@@ -77,6 +101,14 @@
 				DA6198C529C2E1510033980B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DABFF3DC2A01EE8E005B290F /* pass-wallet-prototypeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DABFF3DD2A01EE8E005B290F /* pass_wallet_prototypeTests.swift */,
+			);
+			path = "pass-wallet-prototypeTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +135,24 @@
 			productReference = DA6198BB29C2E1500033980B /* pass-wallet-prototype.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DABFF3DA2A01EE8E005B290F /* pass-wallet-prototypeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DABFF3E32A01EE8E005B290F /* Build configuration list for PBXNativeTarget "pass-wallet-prototypeTests" */;
+			buildPhases = (
+				DABFF3D72A01EE8E005B290F /* Sources */,
+				DABFF3D82A01EE8E005B290F /* Frameworks */,
+				DABFF3D92A01EE8E005B290F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DABFF3E02A01EE8E005B290F /* PBXTargetDependency */,
+			);
+			name = "pass-wallet-prototypeTests";
+			productName = "pass-wallet-prototypeTests";
+			productReference = DABFF3DB2A01EE8E005B290F /* pass-wallet-prototypeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,11 +160,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					DA6198BA29C2E1500033980B = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					DABFF3DA2A01EE8E005B290F = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = DA6198BA29C2E1500033980B;
 					};
 				};
 			};
@@ -135,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				DA6198BA29C2E1500033980B /* pass-wallet-prototype */,
+				DABFF3DA2A01EE8E005B290F /* pass-wallet-prototypeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -147,6 +202,13 @@
 				DA6198C629C2E1510033980B /* Preview Assets.xcassets in Resources */,
 				DA6198C329C2E1510033980B /* Assets.xcassets in Resources */,
 				DAC1C2DD29F902ED00988955 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DABFF3D92A01EE8E005B290F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +225,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DABFF3D72A01EE8E005B290F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABFF3DE2A01EE8E005B290F /* pass_wallet_prototypeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DABFF3E02A01EE8E005B290F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA6198BA29C2E1500033980B /* pass-wallet-prototype */;
+			targetProxy = DABFF3DF2A01EE8E005B290F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DA6198C729C2E1510033980B /* Debug */ = {
@@ -293,6 +371,7 @@
 				DEVELOPMENT_TEAM = FVWPNKUT4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pass-wallet-prototype/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "pass-wallet-proto";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -330,6 +409,7 @@
 				DEVELOPMENT_TEAM = FVWPNKUT4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pass-wallet-prototype/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "pass-wallet-proto";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -354,6 +434,44 @@
 			};
 			name = Release;
 		};
+		DABFF3E12A01EE8E005B290F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FVWPNKUT4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.chu.pass-wallet-prototypeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pass-wallet-prototype.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pass-wallet-prototype";
+			};
+			name = Debug;
+		};
+		DABFF3E22A01EE8E005B290F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FVWPNKUT4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.chu.pass-wallet-prototypeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pass-wallet-prototype.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pass-wallet-prototype";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -371,6 +489,15 @@
 			buildConfigurations = (
 				DA6198CA29C2E1510033980B /* Debug */,
 				DA6198CB29C2E1510033980B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DABFF3E32A01EE8E005B290F /* Build configuration list for PBXNativeTarget "pass-wallet-prototypeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DABFF3E12A01EE8E005B290F /* Debug */,
+				DABFF3E22A01EE8E005B290F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
